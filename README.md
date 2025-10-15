@@ -12,8 +12,7 @@ At the start user has two options:
 
 User then types 1. or 2.
 If user types "1." than user needs to type distance from the Sun in Astronomical Units (AU)
-# AU is short for astronomical unit
-# 1 AU = 93,000,000 miles = 149,598,000 kilometers.
+*1 AU (Astronomical Unit) = 93,000,000 miles = 149,598,000 kilometers.*
 After that, program calculates how long will it take to complete that orbit and result will be presented in Earth years.
 
 If "2." is selected, user needs to select a planet, after which program will show "Enter orbit altitude above Mars in kilometers (km):"
