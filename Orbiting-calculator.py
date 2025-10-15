@@ -46,7 +46,6 @@ if choice == "1":
 
 elif choice == "2":
     print("Orbit around the Planet")
-    print("Choose a planet:")
     planet_choice = input("Enter planet number: ")
 
     if planet_choice in planet:
