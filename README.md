@@ -23,14 +23,23 @@ After that program will calculate Orbital period around selected planet.
 However, to keep results realistic, the program includes minimum safe orbit altitudes for each planet:
 # Minimum safe orbit altitudes (in km)
 safe_orbit = {
+
     "1": 100,    # Mercury
+    
     "2": 250,    # Venus
+    
     "3": 160,    # Earth
+    
     "4": 150,    # Mars
+    
     "5": 5000,   # Jupiter
+    
     "6": 6000,   # Saturn
+    
     "7": 3000,   # Uranus
+    
     "8": 3000,   # Neptune
+    
     "9": 50      # Pluto
 }
 
