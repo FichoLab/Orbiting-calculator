@@ -45,7 +45,13 @@ safe_orbit = {
     "9": 50      # Pluto
 }
 
-If the entered altitude is lower than the safe limit, program auto-corrects and shows you minimal realistic altitude.
+If the entered altitude is lower than the safe limit, program auto-corrects and and calculates with minimum altitude.
+
+After program calculates Orbital period around selected planet, than it will calculate Orbital velocity using Vis-Vira Equation.
+
+Vis-Vira Equation (Orbital velocity) = Determines the velocity of an orbiter at any point in its orbit
+**v = √[ μ (2/r - 1/a) ]**
+
 
 
 ## How to run ##
