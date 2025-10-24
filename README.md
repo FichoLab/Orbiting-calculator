@@ -52,6 +52,9 @@ After program calculates Orbital period around selected planet, than it will cal
 Vis-Vira Equation (Orbital velocity) = Determines the velocity of an orbiter at any point in its orbit
 **v = √[ μ (2/r - 1/a) ]**
 
+Next, it calculates Specific Orbital Energy using formula:
+**specific_orbital_energy = - (μ / 2 * a)**
+
 
 
 ## How to run ##
