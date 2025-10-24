@@ -83,7 +83,9 @@ elif choice == "2":
     v = math.sqrt(inside)
     print(f"Orbital velocity: {v:.2f} m/s")
 
-
+    # Specific Orbital Energy
+    specific_orbital_energy = - (μ / 2 * a) # (J/kg)
+    print(f"Specific Orbital Energy: {specific_orbital_energy:.2f} J/kg")
 
 
 
