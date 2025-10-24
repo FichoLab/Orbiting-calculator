@@ -62,30 +62,29 @@ elif choice == "2":
             print(f"(Auto-Correct) Using realistic safe altitude: {min_altitude} km instead.")
             altitude_km = min_altitude
 
-        altitude_m = altitude_km * 1000 # Convert to meters
+        altitude_m = altitude_km * 1000  # Convert to meters
         r = radius + altitude_m  # Total distance from planet center
 
+        # Orbital period
         T = 2 * math.pi * math.sqrt(r**3 / (G * mass_planet))
         print(f"Orbital period around {name}:")
         print(f"{T:.2f} seconds")
         print(f"{T/60:.2f} minutes")
         print(f"{T/3600:.2f} hours")
         print(f"{T/86400:.2f} days")
+
+        # Corrected semi-major axis
+        a = ((μ * T**2) / (4 * math.pi**2)) ** (1/3)
+
+        # Orbital velocity
+        v = math.sqrt(μ * (2/r - 1/a))
+        print(f"Orbital velocity: {v:.2f} m/s")
+
+        # Specific Orbital Energy
+        specific_orbital_energy = -μ / (2 * a)
+        print(f"Specific Orbital Energy: {specific_orbital_energy:.2e} J/kg")
+
     else:
         print("Invalid planet selection.")
-
-    # Vis-Vira Equation (Orbital velocity) = Determines the velocity of an orbiter at any point in its orbit
-    # v = √[ μ (2/r - 1/a) ]
-
-    a = ((μ * T) / (4 * math.pi)) ** 1/3     # a = semi-major axis at the orbit
-
-    inside = μ * (2/radius - 1/a)
-    v = math.sqrt(inside)
-    print(f"Orbital velocity: {v:.2f} m/s")
-
-    # Specific Orbital Energy
-    specific_orbital_energy = - (μ / 2 * a) # (J/kg)
-    print(f"Specific Orbital Energy: {specific_orbital_energy:.2f} J/kg")
-
 
 
